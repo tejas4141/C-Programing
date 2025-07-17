@@ -1,0 +1,40 @@
+-------------------result------------------
+
+PRODUCT 1
+
+Product Name    :HP
+
+Product ID      :101
+
+Product Price   :7000
+
+Product Quantity:4
+
+PRODUCT 2
+
+Product Name    :DELL
+
+Product ID      :102
+
+Product Price   :8000
+
+Product Quantity:8
+
+PRODUCT 3
+
+Product Name    :LENEVO
+
+Product ID      :103
+
+Product Price   :9000
+
+Product Quantity:9
+
+
+Product Total    :173000.00
+
+Product Disper   :10.00
+
+Product Dis_amt  :17300.00
+
+Product Pay_amt  :155700.00
