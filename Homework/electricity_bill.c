@@ -24,10 +24,7 @@ int main()
                     amt=amt+(100*15);
                     units-=100;
                     if (units>=100)
-                    {
-                        amt=amt+(100*15);
-                        units-=100;
-                        if(units>=100)
+                    
                         {
                         amt=amt+(100*17);
                         units-=100;
@@ -41,8 +38,6 @@ int main()
                 }else
                         amt=amt+(units*15);
             }else
-                amt=amt+(units*15);
-        }else
                 amt=amt+(units*12);
     }else
             amt=amt+(units*10);
