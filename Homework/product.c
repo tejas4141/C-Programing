@@ -13,7 +13,7 @@ int main()
     printf("Enter product name:");
     scanf("%s%s%s",&name1,&name2,&name3);
 
-    printf("Enter 1 st product price:");
+    printf("Enter product price:");
     scanf("%d%d%d",&p1,&p2,&p3);
 
     printf("Entr quntity:");
@@ -41,37 +41,21 @@ int main()
     }
     disamt=(total*disper)/100;
     payamt = total-disamt;
-    printf("\nTotal is      :%.2f:\n",total);
-    printf("\nD Amount      :%.2f\n",disamt);
-    printf("\nD Percentage  :%.2f\n",payamt);
     
-
-    fprintf(fp,"-------------------result------------------\n\n");
-    fprintf(fp,"PRODUCT 1\n");
-    fprintf(fp,"\nProduct Name    :%s\n",name1);
-    fprintf(fp,"\nProduct ID      :%d\n",id1);
-    fprintf(fp,"\nProduct Price   :%d\n",p1);
-    fprintf(fp,"\nProduct Quantity:%d\n\n",q1);
-
-    fprintf(fp,"PRODUCT 2\n");
-    fprintf(fp,"\nProduct Name    :%s\n",name2);
-    fprintf(fp,"\nProduct ID      :%d\n",id2);
-    fprintf(fp,"\nProduct Price   :%d\n",p2);
-    fprintf(fp,"\nProduct Quantity:%d\n\n",q2);
-
-    fprintf(fp,"PRODUCT 3\n");
-    fprintf(fp,"\nProduct Name    :%s\n",name3);
-    fprintf(fp,"\nProduct ID      :%d\n",id3);
-    fprintf(fp,"\nProduct Price   :%d\n",p3);
-    fprintf(fp,"\nProduct Quantity:%d\n\n",q3);
+    fprintf(fp,"\n------------------------------------------------------------------------------");
+    fprintf(fp,"\n|  ID  |         Name        |    Price     |      Qty     |       Total     |");
+    fprintf(fp,"\n------------------------------------------------------------------------------");
+    fprintf(fp,"\n|%6d|%21d|%14d|%14d|%17d|",id1,name1,p1,q1,(p1*q1));
+    fprintf(fp,"\n------------------------------------------------------------------------------");
+    fprintf(fp,"\n|%6d|%21d|%14d|%14d|%17d|",id2,name2,p2,q2,(p2*q2));
+    fprintf(fp,"\n------------------------------------------------------------------------------");
+    fprintf(fp,"\n|%6d|%21d|%14d|%14d|%17d|",id3,name3,p3,q3,(p3*q3));
+    fprintf(fp,"\n------------------------------------------------------------------------------");
+    fprintf(fp,"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tTotal        :%.2f",total);
+    fprintf(fp,"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tDisper(%%)    :%.2f",disper);
+    fprintf(fp,"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tDis_amt      :%.2f",disamt);
+    fprintf(fp,"\n\t\t\t\t\t\t\t\t\t\t\t\t\t\tPay_amt      :%.2f",payamt);
 
 
-
-    fprintf(fp,"\nProduct Total    :%.2f\n",total);
-    fprintf(fp,"\nProduct Disper   :%.2f\n",disper);
-    fprintf(fp,"\nProduct Dis_amt  :%.2f\n",disamt);
-    fprintf(fp,"\nProduct Pay_amt  :%.2f\n",payamt);
-
-return 0;
-
+    return 0;
 }
